@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.hk.com/xsds/smartdata"
+            targetNamespace="http://www.hk.com/xsds/smartdata" elementFormDefault="qualified">
+  <xsd:annotation>
+    <xsd:documentation>XSD for Schema Generationt</xsd:documentation>
+    <xsd:appinfo>
+        <schemaBindings>
+        <package name="org.hk.smartdata.framework.internal.model.jaxb.plugin.generated"/>
+      </schemaBindings>
+      </xsd:appinfo>
+  </xsd:annotation>
+
+  <xsd:complexType name="attribute-type">    
+    <xsd:attribute name="name" type="xsd:string"/>
+    <xsd:attribute name="type" type="xsd:string"/>    
+    <xsd:attribute name="description" type="xsd:string"/>    
+    <xsd:attribute name="value" type="xsd:string"/>    
+  </xsd:complexType>
+  
+  <xsd:complexType name="smartdata-plugin-config-type">
+    <xsd:sequence>
+      <xsd:element name="attribute" minOccurs="0" maxOccurs="unbounded" type="attribute-type"/>
+    </xsd:sequence>
+    <xsd:attribute name="name" type="xsd:string"/>
+    <xsd:attribute name="description" type="xsd:string"/>
+    <xsd:attribute name="plugin-class" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="smartdata-plugin-config" type="smartdata-plugin-config-type"/>
+</xsd:schema>

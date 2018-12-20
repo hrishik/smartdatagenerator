@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<smartdata-plugin-config xmlns="http://www.hk.com/xsds/smartdata" name="sequence" description="Sequential Data Plugin"
+                         plugin-class="org.hk.smartdata.plugin.sequence.impl.SequenceDataPluginManager">
+  <attribute name="from"></attribute>
+  <attribute name="to"></attribute>  
+</smartdata-plugin-config>

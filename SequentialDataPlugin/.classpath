@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="var" path="JRE_LIB" sourcepath="JRE_SRC"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SmartDataGeneratorFramework"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

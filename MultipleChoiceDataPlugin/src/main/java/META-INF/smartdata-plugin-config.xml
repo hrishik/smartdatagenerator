@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<smartdata-plugin-config xmlns="http://www.hk.com/xsds/smartdata" name="multi-choice" description="Multiple Choice Data Plugin"
+                         plugin-class="org.hk.smartdata.plugin.multichoice.impl.MultipleChoiceDataPluginManager">  
+  <attribute name="comma-separated-values"></attribute>
+</smartdata-plugin-config>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<smartdata-plugin-config xmlns="http://www.hk.com/xsds/smartdata" name="foreign" description="Foreign Data Plugin"
+                         plugin-class="org.hk.smartdata.plugin.foreign.impl.ForeignDataPluginManager">
+  <attribute name="jndi-name" type="xsd:string"/>
+  <attribute name="jdbc-driver" type="xsd:string"/>
+  <attribute name="jdbc-user" type="xsd:string"/>
+  <attribute name="jdbc-password" type="xsd:string"/>
+  <attribute name="jdbc-url" type="xsd:string"/>
+  
+  <attribute name="refTableName"></attribute>
+  <attribute name="refColumnName"></attribute>
+  <attribute name="refSchemaName"></attribute>
+  <attribute name="sql"></attribute>
+  
+</smartdata-plugin-config>

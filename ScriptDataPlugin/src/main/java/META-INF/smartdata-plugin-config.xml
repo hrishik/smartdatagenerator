@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<smartdata-plugin-config xmlns="http://www.hk.caom/xsds/smartdata" name="script" description="Script Data Plugin"
+                         plugin-class="org.hk.smartdata.plugin.script.impl.ScriptDataPluginManager">
+  <attribute name="expression"></attribute>  
+</smartdata-plugin-config>

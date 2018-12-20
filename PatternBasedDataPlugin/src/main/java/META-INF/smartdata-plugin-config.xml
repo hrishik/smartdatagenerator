@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<smartdata-plugin-config xmlns="http://www.hk.com/xsds/smartdata" name="pattern" description="Pattern Data Plugin"
+                         plugin-class="org.hk.smartdata.plugin.pattern.impl.PatternDataPluginManager">
+  <attribute name="comma-separated-values"></attribute>
+  <attribute name="no-of-expected-values"></attribute>  
+  <attribute name="variance-plus"></attribute>  
+  <attribute name="variance-minus"></attribute>  
+</smartdata-plugin-config>

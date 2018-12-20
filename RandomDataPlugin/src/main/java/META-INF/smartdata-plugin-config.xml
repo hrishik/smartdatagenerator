@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<smartdata-plugin-config xmlns="http://www.hk.com/xsds/smartdata" name="random" description="Random Data Plugin"
+                         plugin-class="org.hk.smartdata.plugin.random.impl.RandomDataPluginManager">
+  <attribute name="str-length"></attribute>
+  <attribute name="from"></attribute>
+  <attribute name="to"></attribute>  
+  <attribute name="str-before"></attribute>  
+  <attribute name="str-after"></attribute>  
+</smartdata-plugin-config>
