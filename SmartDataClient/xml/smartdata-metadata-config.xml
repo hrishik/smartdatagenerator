@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<smartdata-metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="smartdata-metadata-config.xsd"
+                    xmlns="http://www.hk.com/xsds/smartdata">
+  <!--schema name="test" jndi-name="jdbc/test"-->
+  <schema name="test" jdbc-driver="oracle.jdbc.OracleDriver" jdbc-password="ovetl" jdbc-user="ovetl"
+          jdbc-url="jdbc:oracle:thin:@//172.16.88.52:1521/inst">
+    <table name="test2">
+      <!-- CO -->
+      <columns>
+        <column name="date_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="5000"/>
+          <attribute name="repeat-by" value="2064"/>
+        </column>
+        <column name="erp" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="43"/>
+          <attribute name="increment-by" value="1"/>
+          <attribute name="repeat-by" value="48"/>
+        </column>
+        <column name="time_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="84602"/>
+          <attribute name="increment-by" value="1800"/>
+          <attribute name="repeat-by" value="1"/>
+        </column>
+        <!--column name="road_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column>
+        <column name="segment_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column-->
+        <!-- co -->
+        <column name="concentration" plugin-name="pattern" database-type="java.lang.Double">
+          <attribute name="comma-separated-values"
+                     value="0.650,0.710,0.780,0.900,2.000,10.000,36.000,61.000,98.000,110.000,110.000,104.000,110.000,105.000,110.000,98.000,97.000,98.000,88.000,76.000,56.000,33.0,0,1.000,1.000"/>
+          <attribute name="no-of-expected-values" value="48"/>
+          <attribute name="variance-plus" value="10"/>
+          <attribute name="variance-minus" value="10"/>
+        </column>
+        <column name="uom_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="1"/>
+        </column>
+        <column name="pollutant_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="1"/>
+        </column>
+      </columns>
+    </table>
+    <table name="test2ozone">
+      <!-- Ozone -->
+      <columns>
+        <column name="date_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="5000"/>
+          <attribute name="repeat-by" value="2064"/>
+        </column>
+        <column name="erp" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="43"/>
+          <attribute name="increment-by" value="1"/>
+          <attribute name="repeat-by" value="48"/>
+        </column>
+        <column name="time_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="84602"/>
+          <attribute name="increment-by" value="1800"/>
+          <attribute name="repeat-by" value="1"/>
+        </column>
+        <!--column name="road_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column>
+        <column name="segment_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column-->
+        <column name="concentration" plugin-name="pattern" database-type="java.lang.Double">
+          <attribute name="comma-separated-values"
+                     value="0.129068005,0.129677993,0.130897969,0.179697013,0.179697013,0.216296296,0.301694624,0.637188053,1.247176105,2.589149821,2.46715221,2.589149821,2.467152,1,1.857164158,1.875463799,1.857164158,2.223156989,1.857164158,1.857164158,1.857164158,1.918162963,1.247176105,0.332194026,0.271195221"/>
+          <attribute name="no-of-expected-values" value="48"/>
+          <attribute name="variance-plus" value="10"/>
+          <attribute name="variance-minus" value="10"/>
+        </column>
+        <column name="uom_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="1"/>
+        </column>
+        <column name="pollutant_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="2"/>
+        </column>
+      </columns>
+    </table>
+    <table name="test2no">
+      <!-- NO2 -->
+      <columns>
+        <column name="date_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="5000"/>
+          <attribute name="repeat-by" value="2064"/>
+        </column>
+        <column name="erp" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="43"/>
+          <attribute name="increment-by" value="1"/>
+          <attribute name="repeat-by" value="48"/>
+        </column>
+        <column name="time_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="84602"/>
+          <attribute name="increment-by" value="1800"/>
+          <attribute name="repeat-by" value="1"/>
+        </column>
+        <!--column name="road_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column>
+        <column name="segment_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column-->
+        <column name="concentration" plugin-name="pattern" database-type="java.lang.Double">
+          <attribute name="comma-separated-values"
+                     value="0.167,0.168,0.170,0.250,0.250,0.310,0.450,1.000,2.000,4.200,4.000,4.200,4.000,3.000,3.030,3.000,3.600,3.000,3.000,3.000,3.100,2.000,0.500,0.400"/>
+          <attribute name="no-of-expected-values" value="48"/>
+          <attribute name="variance-plus" value="10"/>
+          <attribute name="variance-minus" value="10"/>
+        </column>
+        <column name="uom_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="1"/>
+        </column>
+        <column name="pollutant_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="3"/>
+        </column>
+      </columns>
+    </table>
+    <table name="test2so">
+      <!-- SO2 -->
+      <columns>
+        <column name="date_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="5000"/>
+          <attribute name="repeat-by" value="2064"/>
+        </column>
+        <column name="erp" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="43"/>
+          <attribute name="increment-by" value="1"/>
+          <attribute name="repeat-by" value="48"/>
+        </column>
+        <column name="time_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="84602"/>
+          <attribute name="increment-by" value="1800"/>
+          <attribute name="repeat-by" value="1"/>
+        </column>
+        <!--column name="road_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column>
+        <column name="segment_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column-->
+        <column name="concentration" plugin-name="pattern" database-type="java.lang.Double">
+          <attribute name="comma-separated-values"
+                     value="0.123700,0.124200,0.125200,0.165900,0.165900,0.196400,0.267500,0.547100,1.055400,2.173600,2.072000,2.173600,2.072000,1.563700,1.578900,1.563700,1.868600,1.563700,1.563700,1.563700,1.614500,1.055400,0.292900,0.242100"/>
+          <attribute name="no-of-expected-values" value="48"/>
+          <attribute name="variance-plus" value="10"/>
+          <attribute name="variance-minus" value="10"/>
+        </column>
+        <column name="uom_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="1"/>
+        </column>
+        <column name="pollutant_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="4"/>
+        </column>
+      </columns>
+    </table>
+    <table name="test2ppm">
+      <!-- PPM -->
+      <columns>
+        <column name="date_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="5000"/>
+          <attribute name="repeat-by" value="2064"/>
+        </column>
+        <column name="erp" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="43"/>
+          <attribute name="increment-by" value="1"/>
+          <attribute name="repeat-by" value="48"/>
+        </column>
+        <column name="time_key" plugin-name="sequence" database-type="java.lang.Integer">
+          <attribute name="from" value="1"/>
+          <attribute name="to" value="84602"/>
+          <attribute name="increment-by" value="1800"/>
+          <attribute name="repeat-by" value="1"/>
+        </column>
+        <!--column name="road_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column>
+        <column name="segment_key" plugin-name="fixed" database-type="java.lang.String">
+          <attribute name="fixed-value" value=""/>
+        </column-->
+        <column name="concentration" plugin-name="pattern" database-type="java.lang.Double">
+          <attribute name="comma-separated-values"
+                     value="53.15818399,53.36272401,53.77180406,70.13500597,70.13500597,82.40740741,111.0430108,223.5400239,428.0800478,878.0681004,837.1600956,878.0681004,837.160,956,632.6200717,638.7562724,632.6200717,755.344086,632.6200717,632.6200717,632.6200717,653.0740741,428.0800478,121.2700119,100.8160096"/>
+          <attribute name="no-of-expected-values" value="48"/>
+          <attribute name="variance-plus" value="10"/>
+          <attribute name="variance-minus" value="10"/>
+        </column>
+        <column name="uom_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="2"/>
+        </column>
+        <column name="pollutant_key" plugin-name="fixed" database-type="java.lang.Integer">
+          <attribute name="fixed-value" value="5"/>
+        </column>
+      </columns>
+    </table>
+  </schema>
+</smartdata-metadata>

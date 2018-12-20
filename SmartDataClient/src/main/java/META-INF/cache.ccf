@@ -1,0 +1,28 @@
+# DEFAULT CACHE REGION
+jcs.default=smartdatagen
+jcs.default.cacheattributes=org.apache.jcs.engine.CompositeCacheAttributes
+jcs.default.cacheattributes.MaxObjects=10000
+jcs.default.cacheattributes.MemoryCacheName=org.apache.jcs.engine.memory.lru.LRUMemoryCache
+jcs.default.cacheattributes.UseMemoryShrinker=true
+jcs.default.cacheattributes.MaxMemoryIdleTimeSeconds=1
+jcs.default.cacheattributes.ShrinkerIntervalSeconds=600
+jcs.default.elementattributes=org.apache.jcs.engine.ElementAttributes
+jcs.default.elementattributes.IsEternal=false
+jcs.default.elementattributes.MaxLifeSeconds=600
+jcs.default.elementattributes.IdleTime=600
+jcs.default.elementattributes.IsSpool=false
+jcs.default.elementattributes.IsRemote=true
+jcs.default.elementattributes.IsLateral=true
+
+
+# AVAILABLE AUXILIARY CACHES
+jcs.auxiliary.smartdatagen=org.apache.jcs.auxiliary.disk.indexed.IndexedDiskCacheFactory
+jcs.auxiliary.smartdatagen.attributes=org.apache.jcs.auxiliary.disk.indexed.IndexedDiskCacheAttributes
+jcs.auxiliary.smartdatagen.attributes.DiskPath=target/jcs
+jcs.auxiliary.smartdatagen.attributes.MaxPurgatorySize=10000000
+jcs.auxiliary.smartdatagen.attributes.MaxKeySize=1000000
+jcs.auxiliary.smartdatagen.attributes.MaxRecycleBinSize=5000
+jcs.auxiliary.smartdatagen.attributes.OptimizeAtRemoveCount=300000
+jcs.auxiliary.smartdatagen.attributes.ShutdownSpoolTimeLimit=60
+jcs.auxiliary.smartdatagen.attributes.allowRemoveAll=true
+jcs.auxiliary.smartdatagen.attributes.MaxLifeSeconds=600

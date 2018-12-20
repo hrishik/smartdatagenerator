@@ -4,4 +4,9 @@
 	<classpathentry kind="var" path="JRE_LIB" sourcepath="JRE_SRC"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SmartDataGeneratorCommon"/>
 	<classpathentry kind="output" path="bin"/>
+		<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 </classpath>
